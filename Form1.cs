@@ -36,8 +36,8 @@ namespace ConsultorioApp
 
         private void btnExcusa_Click(object sender, EventArgs e)
         {
-            FormDocumento f = new FormDocumento("Excusa");
-            f.ShowDialog();
+            FormExcusa formExcusa = new FormExcusa();
+            formExcusa.ShowDialog();
         }
 
         private void btnHistoria_Click(object sender, EventArgs e)

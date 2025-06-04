@@ -70,6 +70,12 @@
     <Compile Include="FormDocumento.Designer.cs">
       <DependentUpon>FormDocumento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormExcusa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExcusa.Designer.cs">
+      <DependentUpon>FormExcusa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFormula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDocumento.resx">
       <DependentUpon>FormDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExcusa.resx">
+      <DependentUpon>FormExcusa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFormula.resx">
       <DependentUpon>FormFormula.cs</DependentUpon>
