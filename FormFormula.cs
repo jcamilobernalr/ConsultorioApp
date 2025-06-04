@@ -146,13 +146,13 @@ namespace ConsultorioApp
         {
             PdfPTable footerTable = new PdfPTable(1);
             footerTable.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
-            footerTable.DefaultCell.Border = Rectangle.NO_BORDER;
+            footerTable.DefaultCell.Border = iTextSharp.text.Rectangle.NO_BORDER;
             footerTable.DefaultCell.HorizontalAlignment = Element.ALIGN_CENTER;
 
             PdfPCell lineCell = new PdfPCell(new Phrase(" "))
             {
                 BorderWidthTop = 1,
-                Border = Rectangle.TOP_BORDER,
+                Border = iTextSharp.text.Rectangle.TOP_BORDER,
                 BorderColorTop = BaseColor.GRAY,
                 PaddingTop = 5,
                 BorderWidthBottom = 0,
@@ -163,7 +163,7 @@ namespace ConsultorioApp
 
             PdfPCell footerTextCell = new PdfPCell(new Phrase("Calle 51 No. 23 -34  Cel. 310 864 9410\nBogotá D.C. – Colombia", fontFooter))
             {
-                Border = Rectangle.NO_BORDER,
+                Border = iTextSharp.text.Rectangle.NO_BORDER,
                 HorizontalAlignment = Element.ALIGN_CENTER,
                 PaddingTop = 5
             };
