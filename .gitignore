@@ -1,0 +1,8 @@
+# Archivos y carpetas que Visual Studio genera automáticamente
+.vs/
+*.user
+*.suo
+*.VC.db
+*.vscode/
+bin/
+obj/
