@@ -18,6 +18,11 @@ namespace ConsultorioApp
         public FormExcusa()
         {
             InitializeComponent();
+            // Desactiva el botón de maximizar
+            this.MaximizeBox = false;
+
+            // Evita que el usuario cambie el tamaño de la ventana
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void btnGuardar_excusa_Click(object sender, EventArgs e)
@@ -102,5 +107,9 @@ namespace ConsultorioApp
             }
         }
 
+        private void FormExcusa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFormula));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnGuardar_receta = new System.Windows.Forms.Button();
             this.lblTexto_cotiza = new System.Windows.Forms.Label();
+            this.txtRecetaManual = new System.Windows.Forms.TextBox();
+            this.btnAgregarMedicamento = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePicker_receta = new System.Windows.Forms.DateTimePicker();
             this.lblFecha_receta = new System.Windows.Forms.Label();
             this.txtNombrePaciente_receta = new System.Windows.Forms.TextBox();
             this.lblNombrePaciente_receta = new System.Windows.Forms.Label();
             this.labelNombreDoctora_receta = new System.Windows.Forms.Label();
-            this.txtRecetaManual = new System.Windows.Forms.TextBox();
-            this.btnAgregarMedicamento = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +88,25 @@
             this.lblTexto_cotiza.Text = "Receta";
             this.lblTexto_cotiza.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTexto_cotiza.Click += new System.EventHandler(this.lblTexto_cotiza_Click);
+            // 
+            // txtRecetaManual
+            // 
+            this.txtRecetaManual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecetaManual.Location = new System.Drawing.Point(3, 71);
+            this.txtRecetaManual.Multiline = true;
+            this.txtRecetaManual.Name = "txtRecetaManual";
+            this.txtRecetaManual.Size = new System.Drawing.Size(654, 233);
+            this.txtRecetaManual.TabIndex = 16;
+            // 
+            // btnAgregarMedicamento
+            // 
+            this.btnAgregarMedicamento.Location = new System.Drawing.Point(3, 37);
+            this.btnAgregarMedicamento.Name = "btnAgregarMedicamento";
+            this.btnAgregarMedicamento.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarMedicamento.TabIndex = 17;
+            this.btnAgregarMedicamento.Text = "Agregar Medicamento";
+            this.btnAgregarMedicamento.UseVisualStyleBackColor = true;
+            this.btnAgregarMedicamento.Click += new System.EventHandler(this.btnAgregarMedicamento_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -154,25 +174,6 @@
             this.labelNombreDoctora_receta.Text = "Dra. Bertha Patricia Monroy Garibello";
             this.labelNombreDoctora_receta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtRecetaManual
-            // 
-            this.txtRecetaManual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecetaManual.Location = new System.Drawing.Point(3, 71);
-            this.txtRecetaManual.Multiline = true;
-            this.txtRecetaManual.Name = "txtRecetaManual";
-            this.txtRecetaManual.Size = new System.Drawing.Size(654, 233);
-            this.txtRecetaManual.TabIndex = 16;
-            // 
-            // btnAgregarMedicamento
-            // 
-            this.btnAgregarMedicamento.Location = new System.Drawing.Point(3, 37);
-            this.btnAgregarMedicamento.Name = "btnAgregarMedicamento";
-            this.btnAgregarMedicamento.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarMedicamento.TabIndex = 17;
-            this.btnAgregarMedicamento.Text = "Agregar Medicamento";
-            this.btnAgregarMedicamento.UseVisualStyleBackColor = true;
-            this.btnAgregarMedicamento.Click += new System.EventHandler(this.btnAgregarMedicamento_Click);
-            // 
             // FormFormula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,8 +182,10 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.labelNombreDoctora_receta);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormFormula";
             this.Text = "FormFormula";
+            this.Load += new System.EventHandler(this.FormFormula_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

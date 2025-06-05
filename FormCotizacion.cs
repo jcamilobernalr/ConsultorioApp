@@ -12,6 +12,11 @@ namespace ConsultorioApp
         public FormCotizacion()
         {
             InitializeComponent();
+            // Desactiva el botón de maximizar
+            this.MaximizeBox = false;
+
+            // Evita que el usuario cambie el tamaño de la ventana
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void FormCotizacion_Load(object sender, EventArgs e)

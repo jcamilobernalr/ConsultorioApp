@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCotizacion));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePicker_coti = new System.Windows.Forms.DateTimePicker();
             this.lblFecha_coti = new System.Windows.Forms.Label();
@@ -230,6 +231,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.labelNombreDoctora);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCotizacion";
             this.Text = "Cotizacion";
             this.Load += new System.EventHandler(this.FormCotizacion_Load);

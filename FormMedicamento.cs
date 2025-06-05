@@ -10,6 +10,11 @@ namespace ConsultorioApp
         public FormMedicamento()
         {
             InitializeComponent();
+            // Desactiva el botón de maximizar
+            this.MaximizeBox = false;
+
+            // Evita que el usuario cambie el tamaño de la ventana
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -36,6 +41,11 @@ namespace ConsultorioApp
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void FormMedicamento_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

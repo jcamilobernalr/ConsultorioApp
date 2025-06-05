@@ -18,6 +18,11 @@ namespace ConsultorioApp
         public FormFormula()
         {
             InitializeComponent();
+            // Desactiva el botón de maximizar
+            this.MaximizeBox = false;
+
+            // Evita que el usuario cambie el tamaño de la ventana
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void lblTexto_cotiza_Click(object sender, EventArgs e)
@@ -136,6 +141,11 @@ namespace ConsultorioApp
                     MessageBox.Show("PDF guardado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void FormFormula_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
