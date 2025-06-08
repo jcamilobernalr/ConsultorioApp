@@ -41,12 +41,17 @@ namespace ConsultorioApp
             // Para formatear el valor en moneda al terminar edición en ColValor
             dgvProcedimientos.CellEndEdit += dgvProcedimientos_CellEndEdit;
 
+            // Formato de la columna ColValor como moneda
+            dgvProcedimientos.Columns["ColValor"].DefaultCellStyle.Format = "C0";
+            dgvProcedimientos.Columns["ColValor"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
             // Crear 8 filas vacías al cargar
             for (int i = 0; i < 8; i++)
             {
                 dgvProcedimientos.Rows.Add();
             }
         }
+
 
         // Validar solo números y formato decimal en columna "ColValor"
         private void dgvProcedimientos_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
@@ -216,7 +221,8 @@ namespace ConsultorioApp
                             if (item > 8) break;
 
                             string procedimiento = row.Cells["ColProcedimiento"].Value?.ToString().Trim() ?? "";
-                            string valorTexto = row.Cells["ColValor"].Value?.ToString().Trim() ?? "";
+                            string valorTexto = row.Cells["ColValor"].FormattedValue?.ToString().Trim() ?? "";
+
 
                             // Quitar símbolo moneda para parsear decimal
                             valorTexto = valorTexto.Replace("$", "").Replace(" ", "").Replace(".", "").Replace(",", ".");

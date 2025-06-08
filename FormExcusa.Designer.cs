@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormExcusa));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnGuardar_excusa = new System.Windows.Forms.Button();
-            this.lblTexto_excusa = new System.Windows.Forms.Label();
             this.txtExcusa = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePicker_excusa = new System.Windows.Forms.DateTimePicker();
@@ -48,15 +47,13 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.btnGuardar_excusa, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblTexto_excusa, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.txtExcusa, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 108);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(660, 342);
             this.tableLayoutPanel2.TabIndex = 21;
             // 
@@ -72,24 +69,10 @@
             this.btnGuardar_excusa.UseVisualStyleBackColor = true;
             this.btnGuardar_excusa.Click += new System.EventHandler(this.btnGuardar_excusa_Click);
             // 
-            // lblTexto_excusa
-            // 
-            this.lblTexto_excusa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTexto_excusa.AutoSize = true;
-            this.lblTexto_excusa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto_excusa.Location = new System.Drawing.Point(3, 0);
-            this.lblTexto_excusa.Name = "lblTexto_excusa";
-            this.lblTexto_excusa.Size = new System.Drawing.Size(654, 34);
-            this.lblTexto_excusa.TabIndex = 9;
-            this.lblTexto_excusa.Text = "Excusa";
-            this.lblTexto_excusa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // txtExcusa
             // 
             this.txtExcusa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExcusa.Location = new System.Drawing.Point(3, 37);
+            this.txtExcusa.Location = new System.Drawing.Point(3, 20);
             this.txtExcusa.Multiline = true;
             this.txtExcusa.Name = "txtExcusa";
             this.txtExcusa.Size = new System.Drawing.Size(654, 267);
@@ -186,7 +169,6 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnGuardar_excusa;
-        private System.Windows.Forms.Label lblTexto_excusa;
         private System.Windows.Forms.TextBox txtExcusa;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DateTimePicker dateTimePicker_excusa;
